@@ -1,0 +1,77 @@
+body{
+  background-color: #E7E3E4;
+}
+main{
+  display: grid;
+  grid-template-columns: 45% 30% 25%;
+  align-items: center;
+  background: url("img/foodTable.jpeg") no-repeat fixed center center / cover  rgba(0, 0, 0, 0);
+}
+
+.logo{
+  height: 150px;
+  margin: 20px;
+  grid-column-start: 3;
+  justify-self: end;
+}
+
+#textarea1{
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  grid-column-start: 2;
+}
+
+article{
+  font-family: 'Open Sans', sans-serif;
+	padding: 20px;
+	width: 21em;
+  grid-column-start: 2;
+}
+
+.interact{
+  grid-column-start: 2;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+  width: 22em;
+}
+
+.row{
+  grid-column-start: 2;
+}
+
+
+.cards{
+  display: grid;
+  clear: both;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  display: none;
+}
+
+.one{
+  grid-column-start: 1;
+}
+
+.two{
+  grid-column-start: 2;
+}
+
+.three{
+  grid-column-start: 3;
+}
+.card-image img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.card .card-content {
+  height: 250px;
+}
+
+label{
+  padding-left: 15px;
+}
