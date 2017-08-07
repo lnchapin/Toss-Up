@@ -1,4 +1,5 @@
 body{
+  font-family: 'Open Sans', sans-serif;
   background-color: #E7E3E4;
 }
 main{
@@ -23,7 +24,6 @@ main{
 }
 
 article{
-  font-family: 'Open Sans', sans-serif;
 	padding: 20px;
 	width: 21em;
   grid-column-start: 2;
@@ -37,6 +37,27 @@ article{
   width: 22em;
 }
 
+textarea.materialize-textarea:focus:not([readonly]){
+  border-bottom: #7ea444;
+  box-shadow: 0 1px 0 0 #7ea444;
+}
+
+textarea.materialize-textarea:focus:not([readonly])+label{
+  color: #7ea444;
+}
+
+.btn{
+  background-color: #8cb74c;
+}
+
+.btn:hover{
+  background-color: #97be5d;
+}
+
+.btn:focus{
+  background-color: #7ea444;
+}
+
 .row{
   grid-column-start: 2;
 }
@@ -44,12 +65,14 @@ article{
 
 .cards{
   display: grid;
-  clear: both;
   grid-template-columns: 33% 33% 33%;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  display: none;
+  /*display: none;*/
+}
+h3{
+  grid-column-start: 2;
 }
 
 .one{
@@ -74,4 +97,9 @@ article{
 
 label{
   padding-left: 15px;
+}
+
+footer{
+  background-color: #7ea444;
+  padding: 20px;
 }
