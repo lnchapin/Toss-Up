@@ -21,18 +21,14 @@ $(document).ready(function() {
         $(".one, .two, .three").hide()
       } else{
         $(".one, .two, .three").show()
-        $(".one .card-title").text(RecipeData[0].recipes[0].title)
-        $(".one .card-link").attr("href", RecipeData[0].recipes[0].source_url)
-        $(".one img").attr("src", RecipeData[0].recipes[0].image_url)
-        $(".one p").text("This recipe is published by " + RecipeData[0].recipes[0].publisher + " and has a " + Math.floor(RecipeData[0].recipes[0].social_rank) + "% positive rating")
-        $(".two .card-title").text(RecipeData[0].recipes[1].title)
-        $(".two .card-link").attr("href", RecipeData[0].recipes[1].source_url)
-        $(".two img").attr("src", RecipeData[0].recipes[1].image_url)
-        $(".two p").text("This recipe is published by " + RecipeData[0].recipes[1].publisher + " and has a " + Math.floor(RecipeData[0].recipes[1].social_rank) + "% positive rating")
-        $(".three .card-title").text(RecipeData[0].recipes[2].title)
-        $(".three .card-link").attr("href", RecipeData[0].recipes[2].source_url)
-        $(".three img").attr("src", RecipeData[0].recipes[2].image_url)
-        $(".three p").text("This recipe is published by " + RecipeData[0].recipes[2].publisher + " and has a " + Math.floor(RecipeData[0].recipes[2].social_rank) + "% positive rating")
+        var cardNum = [".one", ".two", ".three"]
+        var recipeNum = [0, 1, 2]
+        for (var i = 0; i < cardNum.length; i++) {
+          $(`${cardNum[i]} .card-title`).text(RecipeData[0].recipes[recipeNum[i]].title)
+          $(`${cardNum[i]} .card-link`).attr("href", RecipeData[0].recipes[0].source_url)
+          $(`${cardNum[i]} img`).attr("src", RecipeData[0].recipes[recipeNum[i]].image_url)
+          $(`${cardNum[i]} p`).text("This recipe is published by " + RecipeData[0].recipes[recipeNum[i]].publisher + " and has a " + Math.floor(RecipeData[0].recipes[recipeNum[i]].social_rank) + "% positive rating")
+        }
         $("h3").text("Your Recipe Options");
         $(".cards").css("display", "grid");
       }
