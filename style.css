@@ -1,35 +1,36 @@
-body{
+body {
   font-family: 'Open Sans', sans-serif;
   background-color: #E7E3E4;
 }
-main{
+
+main {
   display: grid;
   grid-template-columns: 45% 30% 25%;
   align-items: center;
-  background: url("img/foodTable.jpeg") no-repeat fixed center center / cover  rgba(0, 0, 0, 0);
+  background: url("img/foodTable.jpeg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
 }
 
-.logo{
+.logo {
   height: 150px;
   margin: 20px;
   grid-column-start: 3;
   justify-self: end;
 }
 
-#textarea1{
+#textarea1 {
   background: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 10px 10px 10px 10px;
   grid-column-start: 2;
 }
 
-article{
-	padding: 20px;
-	width: 21em;
+article {
+  padding: 20px;
+  width: 21em;
   grid-column-start: 2;
 }
 
-.interact{
+.interact {
   grid-column-start: 2;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 10px 10px 10px 10px;
@@ -37,54 +38,51 @@ article{
   width: 22em;
 }
 
-textarea.materialize-textarea:focus:not([readonly]){
+textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: #7ea444;
   box-shadow: 0 1px 0 0 #7ea444;
 }
 
-textarea.materialize-textarea:focus:not([readonly])+label{
+textarea.materialize-textarea:focus:not([readonly])+label {
   color: #7ea444;
 }
 
-.btn{
+.btn {
   background-color: #8cb74c;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #97be5d;
 }
 
-.btn:focus{
+.btn:focus {
   background-color: #7ea444;
 }
 
-.row{
+.row {
   grid-column-start: 2;
 }
 
-
-.cards{
+.cards {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
-/*h3{
-  grid-column-start: 2;
-}*/
 
-.one{
+.one {
   grid-column-start: 1;
 }
 
-.two{
+.two {
   grid-column-start: 2;
 }
 
-.three{
+.three {
   grid-column-start: 3;
 }
+
 .card-image img {
   height: 240px;
   object-fit: cover;
@@ -94,11 +92,11 @@ textarea.materialize-textarea:focus:not([readonly])+label{
   height: 250px;
 }
 
-label{
+label {
   padding-left: 15px;
 }
 
-footer{
+footer {
   background-color: #7ea444;
   padding: 20px;
 }
