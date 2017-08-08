@@ -19,7 +19,7 @@ $(document).ready(function() {
       if (RecipeData[0].recipes.length == 0) {
         $("h3").text("We couldn't find any recipes with those parameters, please try again")
         $(".one, .two, .three").hide()
-      } else{
+      } else {
         $(".one, .two, .three").show()
         var cardNum = [".one", ".two", ".three"]
         var recipeNum = [0, 1, 2]
@@ -32,7 +32,7 @@ $(document).ready(function() {
         $("h3").text("Your Recipe Options");
         $(".cards").css("display", "grid");
       }
-      });
+    });
 
   });
 })

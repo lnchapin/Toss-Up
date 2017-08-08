@@ -69,11 +69,10 @@ textarea.materialize-textarea:focus:not([readonly])+label{
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  /*display: none;*/
 }
-h3{
+/*h3{
   grid-column-start: 2;
-}
+}*/
 
 .one{
   grid-column-start: 1;
@@ -103,4 +102,3 @@ footer{
   background-color: #7ea444;
   padding: 20px;
 }
- 
