@@ -107,3 +107,6 @@ footer {
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
   color: #364b18;
 }
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+  color: #223506;
+}
