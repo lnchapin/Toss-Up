@@ -26,7 +26,7 @@ $(document).ready(function() {
         for (var i = 0; i < cardNum.length; i++) {
           $(`${cardNum[i]} .card-title`).text(RecipeData[0].recipes[recipeNum[i]].title)
           $(`${cardNum[i]} .card-link`).attr("href", RecipeData[0].recipes[recipeNum[i]].source_url)
-          $(`${cardNum[i]} img`).attr("src", RecipeData[0].recipes[recipeNum[i]].image_url)
+          $(`${cardNum[i]} img`).attr({"src": RecipeData[0].recipes[recipeNum[i]].image_url, "alt":`${RecipeData[0].recipes[recipeNum[i]].title}`})
           $(`${cardNum[i]} p`).text("This recipe is published by " + RecipeData[0].recipes[recipeNum[i]].publisher + " and has a " + Math.floor(RecipeData[0].recipes[recipeNum[i]].social_rank) + "% positive rating")
         }
         $("h3").text("Your Recipe Options");

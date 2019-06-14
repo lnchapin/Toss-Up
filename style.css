@@ -44,7 +44,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 textarea.materialize-textarea:focus:not([readonly])+label {
-  color: #7ea444;
+  color: #364b18;
+}
+
+textarea.materialize-textarea+label {
+  color: #494949;
 }
 
 .btn {
@@ -99,4 +103,7 @@ label {
 footer {
   background-color: #7ea444;
   padding: 20px;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
+  color: #364b18;
 }
