@@ -7,15 +7,13 @@ $(document).ready(function() {
   $('form').on('submit', function(info) {
     info.preventDefault();
     var value = $('#textarea1').val();
-    console.log(value);
+
     var address = "https://cors-anywhere.herokuapp.com/http://food2fork.com/api/search?key=d1120e6ff58f11b4e44f10a447fdfdc7&q=";
     var newAddress = address.concat(value);
 
     $.get(newAddress).then(function(data) {
       RecipeData.splice(0, 1, JSON.parse(data));
-      console.log("-------")
-      console.log("data pushed to RecipeData")
-      console.log(RecipeData)
+      
       if (RecipeData[0].recipes.length == 0) {
         $("h3").text("We couldn't find any recipes with those parameters, please try again")
         $(".one, .two, .three").hide()
