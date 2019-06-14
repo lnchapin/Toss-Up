@@ -15,4 +15,4 @@ After
 ![Bottom of page after contrast fix](https://github.com/lnchapin/Toss-Up/blob/master/img/bottomOfPageAfter.png "Bottom of page after contrast fix")
 
 
-Using the wave tool I increased the contrast in the textarea, on the submit button, and links to recipes. One thing the wave tool didn't pick up on and I originally forgot to check was the way elements colors changed when being interacted with so I had to go back and fix those issues as well and now I know to check for that issue in the future.
+Using the wave tool I increased the contrast in the textarea, the submit button, and links to recipes. One thing the wave tool didn't pick up on and I originally forgot to check was the way elements colors changed when being interacted with so I had to go back and fix those issues as well and now I know to check for that issue in the future.
