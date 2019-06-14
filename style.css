@@ -52,15 +52,15 @@ textarea.materialize-textarea+label {
 }
 
 .btn {
-  background-color: #8cb74c;
+  background-color: #364b18;
 }
 
 .btn:hover {
-  background-color: #97be5d;
+  background-color: #223506;
 }
 
 .btn:focus {
-  background-color: #7ea444;
+  background-color: #223506;
 }
 
 .row {
